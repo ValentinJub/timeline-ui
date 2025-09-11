@@ -51,6 +51,11 @@ jobs:
       - name: Build Angular app
         run: npm run build -- --configuration production
 
+      - name: Check Build folder
+      - run: |
+          pwd,
+          ls -la /home/runner/work/timeline-ui/timeline-ui/dist/timeline-ui
+
       # Example: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
