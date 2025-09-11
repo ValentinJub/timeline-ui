@@ -49,18 +49,12 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --configuration production
-
-      - name: Check Build folder
-        run: |
-          ls -la
-          pwd
-          ls -la /home/runner/work/timeline-ui/timeline-ui/dist/timeline-ui
+        run: ng build --output-path docs --base-href timeline-ui 
 
       # Example: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/timeline-ui/browser
+          publish_dir: docs
 
