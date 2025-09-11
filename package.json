@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint"
   },
   "prettier": {
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@angular/build": "^20.1.1",
-    "@angular/cli": "^20.1.1",
+    "@angular/cli": "^20.3.0",
     "@angular/compiler-cli": "^20.1.0",
     "@types/jasmine": "~5.1.0",
     "angular-eslint": "20.2.0",
