@@ -53,7 +53,7 @@ jobs:
 
       - name: Check Build folder
       - run: |
-          pwd,
+          pwd
           ls -la /home/runner/work/timeline-ui/timeline-ui/dist/timeline-ui
 
       # Example: Deploy to GitHub Pages
