@@ -52,7 +52,8 @@ jobs:
         run: npm run build -- --configuration production
 
       - name: Check Build folder
-      - run: |
+        run: |
+          ls -la
           pwd
           ls -la /home/runner/work/timeline-ui/timeline-ui/dist/timeline-ui
 
