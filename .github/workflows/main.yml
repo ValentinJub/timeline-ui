@@ -49,13 +49,13 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --configuration production
+        run: ng build --output-path docs --base-href timeline-ui 
 
       # Example: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/timeline-ui
-        working-directory: ./
+          working-directory: ./
+          publish_dir: docs
 
