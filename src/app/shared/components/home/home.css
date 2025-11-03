@@ -1,0 +1,9 @@
+.theme-text-color {
+  color: var(--icon-color);
+}
+
+.theme-list {
+  list-style-type: disc !important;
+  list-style-position: outside !important;
+  padding-left: 1.25rem; /* equivalent to pl-5 */
+}

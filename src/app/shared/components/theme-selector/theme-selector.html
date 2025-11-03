@@ -1,0 +1,12 @@
+<div class="flex flex-row">
+    <dx-switch
+        [value]="isDarkTheme()"
+        (onValueChanged)="onValueChanged($event)"
+    />
+    <img
+        class="theme-icon"
+        [src]="isDarkTheme() ? 'assets/icons/moon.svg' : 'assets/icons/sun.svg'"
+        [alt]="isDarkTheme() ? 'Set light theme' : 'Set dark theme'"
+        width="20" height="20"
+    />
+</div>

@@ -1,0 +1,21 @@
+<div id="container" class="text-gray-900 dark:text-white flex flex-gap-2">
+    <dx-menu
+        (onItemClick)="navigateTo($event)"
+    >
+        <dxi-item 
+            icon="home"
+        >
+        </dxi-item>
+        <dxi-item 
+            icon="optionsgear"
+        >
+        </dxi-item>
+        <dxi-item 
+            icon="box"
+        >
+        </dxi-item>
+        <dxi-item>
+        <app-theme-selector></app-theme-selector>
+        </dxi-item>    
+    </dx-menu>
+</div>
